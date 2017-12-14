@@ -1,6 +1,6 @@
 # twitter-test
 
-Please create an application using JS/CSS and HTML. This exercise is to show your technique, problem solving and business logic.
+Please create an application that consists of html, js and css. This exercise is to show your technique, problem solving and business logic.
 
 ## What you must have:
 
