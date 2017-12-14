@@ -1,15 +1,13 @@
 # twitter-test
 
-Please write this application using whatever program language(s) you feel most comfortable. This is a show your technique, skill and business logic.
+Please create an application using JS/CSS and HTML. This exercise is to show your technique, problem solving and business logic.
 
-What you must have:
+## What you must have:
 
-+ a search box with a enter button .
-+ it should be able to search both user mentions and hash tags.
++ a search box with a enter button.
++ it should be able to search both user mentions (@) and hashtags (#).
++ demonstrate using the twitter API service.
 
-Once a search as been entered it should provide a maximum of 10 posts based on the item put in the search box. Example: #winterwonderland or @bmorwood
+Once a search as been entered, it should display a maximum of 10 posts in a list based on the content put in the search box. Example: #winterwonderland or @bmorwood.
 
-You will use the twitter API to pull the information.
-
-This code is to be submitted to Github smashreality.com/twitter-test, please create
-a pull-request to submit your code.
+please create a pull-request to submit your code to smashreality.com/twitter-test.
