@@ -1,0 +1,40 @@
+-﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Twitter Search Box</title>
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+    <!-- CSS styles for standard search box -->
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+				<h2>Search tweets</h2>
+    <!-- HTML for SEARCH BAR -->
+    <div id="tfheader">
+			<img src="images/tweet.png" width="75"height="65">
+            <input type="text" class="tftextinput" name="search" size="21" maxlength="120" id="search_box">
+						<input type="submit" value="search" class="tfbutton" id="search_btn"/>
+        <div class="tfclear" id='search_results'></div>
+			</div>
+    </div>
+		<script src='jquery.min.js'></script>
+		<script>
+		    jQuery(document).ready(function($) {
+
+		        $('#search_btn').click(function(){
+
+		            $('#search_results').html('Loading...');
+
+		            var search_value = encodeURIComponent($('#search_box').val());
+
+		            $.ajax({
+		                url: 'https://Module13Mann.azurewebsites.net/twitter-test/get-tweets.php?q=' + search_value,
+		                success: function(data){
+
+		                $('#search_results').html(data);
+		            }
+		        })
+		        })
+		    });
+		</script>
+</body>
+</html>
